@@ -6,9 +6,8 @@ fs.mkdir(path.join(folderPath, 'files-copy'),
   { recursive: true },
   (err) => {
     if (err) {
-      console.error('err');
+      console.log('err');
     }
-    console.log('Directory created successfully!');
   });
 fs.readdir(path.join(folderPath, 'files'), (err, files) => {
   if (err) {
